@@ -16,6 +16,7 @@
         <log4j.version>1.2.14</log4j.version>
         <slf4j-api.version>1.7.7</slf4j-api.version>
         <logback.version>1.1.1</logback.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
@@ -44,6 +45,13 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+
+        <!--这里是陈胜添加的，解决日志不打印的问题-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
             <version>${slf4j-api.version}</version>
         </dependency>
     </dependencies>
